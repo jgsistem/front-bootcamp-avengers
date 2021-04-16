@@ -1,0 +1,36 @@
+{
+    "activities" : [
+        {
+            "id": 2,
+            "idCategory": 1,
+            "description": "LOS VENGADORES",
+            "count": 0,
+            "uri": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/08/11/15971559642829.jpg",
+            "status": 1
+        },
+        {
+            "id": 3,
+            "idCategory": 1,
+            "description": "JUMANJI",
+            "count": 0,
+            "uri": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/08/11/15971559642829.jpg",
+            "status": 1
+        },
+        {
+            "id": 4,
+            "idCategory": 1,
+            "description": "LA HORA DE TU MUERTE",
+            "count": 0,
+            "uri": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/08/11/15971559642829.jpg",
+            "status": 1
+        },
+        {
+            "id": 5,
+            "idCategory": 1,
+            "description": "PARASITE",
+            "count": 0,
+            "uri": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/08/11/15971559642829.jpg",
+            "status": 1
+        }
+    ]
+}

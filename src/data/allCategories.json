@@ -1,0 +1,77 @@
+{
+    "categories" : [
+        {
+            "id": 1,
+            "idDiscount": 1,
+            "description": "CINE",
+            "status": 1
+        },
+        {
+            "id": 2,
+            "idDiscount": 2,
+            "description": "COMIDA",
+            "status": 1
+        },
+        {
+            "id": 3,
+            "idDiscount": 3,
+            "description": "MUSICA",
+            "status": 1
+        },
+        {
+            "id": 4,
+            "idDiscount": 4,
+            "description": "DEPORTE",
+            "status": 1
+        },
+        {
+            "id": 5,
+            "idDiscount": 5,
+            "description": "MEDITACION",
+            "status": 1
+        },
+        {
+            "id": 6,
+            "idDiscount": 6,
+            "description": "VIAJES",
+            "status": 1
+        },
+        {
+            "id": 7,
+            "idDiscount": 7,
+            "description": "TEATRO",
+            "status": 1
+        },
+        {
+            "id": 8,
+            "idDiscount": 8,
+            "description": "ESTUDIOS",
+            "status": 1
+        },
+        {
+            "id": 9,
+            "idDiscount": 9,
+            "description": "CAMPAMENTOS",
+            "status": 1
+        },
+        {
+            "id": 10,
+            "idDiscount": 10,
+            "description": "VOLUNTARIADO",
+            "status": 1
+        },
+        {
+            "id": 11,
+            "idDiscount": 11,
+            "description": "FINANZAS",
+            "status": 1
+        },
+        {
+            "id": 12,
+            "idDiscount": 12,
+            "description": "TECNOLOGIA",
+            "status": 1
+        }
+    ]
+}
+

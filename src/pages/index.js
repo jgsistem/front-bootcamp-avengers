@@ -35,13 +35,16 @@ const IndexPage = () => {
         textAlign="center" 
         width="100%" 
         bgcolor="rgb(255 255 255 / 80%)">
-        <Box fontSize="h5.fontSize">
-          Welcome Hackaton
+        <Box mb={1} fontSize="h6.fontSize">
+          Se parte de
+        </Box>
+        <Box fontWeight="bold" fontSize="h5.fontSize">
+            BCP TOTAL
         </Box>
         <Box width="100%" mb={5} mt={5}>
-          <TextField fullWidth id="outlined-basic" label="DNI" variant="outlined"  />
+          <TextField fullWidth id="outlined-basic" label="Ingresa tu DNI" variant="outlined"  />
         </Box>
-        <Button variant="contained" color="primary">
+        <Button size="large" variant="contained" color="primary">
           <Link style={linkStyles} to="/category" >Ingresar</Link>
         </Button>
       </Box>

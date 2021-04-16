@@ -6,7 +6,10 @@ import Typography from '@material-ui/core/Typography';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import { Link } from "gatsby"
 import '../styles/category.scss'
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import logoHeader from '../images/logo-header.jpg'
+import JSONData from '../data/allCategories.json'
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import CardTravelIcon from '@material-ui/icons/CardTravel';
 // styles
 
 const pageStyles = {
@@ -18,34 +21,38 @@ const pageStyles = {
 //functions 
 
 const handleSelect = (i) => {
-    category[i].checked = true
+    console.log(i)
 }
 
 // data
 
 const category = [
     {
-        description: "Lorem ipsum dolor",
+        description: "Productos",
         checked: false
     },
     {
-        description: "Consectetur adipiscing elit",
+        description: "Gastronomía",
         checked: false
     },
     {
-        description: "Quam id leo in vitae",
+        description: "Belleza",
         checked: true
     },
     {
-        description: "Lorem ipsum dolo2r",
+        description: "Bienestar y salud",
         checked: false
     },
     {
-        description: "Consectetur adipiscing elit2",
+        description: "Entretenimiento",
         checked: false
     },
     {
-        description: "Quam id leo in vitae2",
+        description: "Viajes y turismo",
+        checked: true
+    },
+    {
+        description: "Servicios",
         checked: true
     }
 ]
@@ -53,28 +60,32 @@ const category = [
 // markup
 const CategoryPage = () => {
   return (
-    <Box display="flex" p={3} flexDirection="column" justifyContent="center" alignItems="center" style={pageStyles}>
-        <Box width="100%">
+    <Box className="category-container" display="flex" p={3} flexDirection="column" justifyContent="center" alignItems="center" style={pageStyles}>
+        <Box width="100%" display="flex" justifyContent="center" bgcolor="#004193" position="absolute" top={0} >
+            <img height={150} src={logoHeader} />
+        </Box>
+        <Box pt={18} width="100%">
             <Typography>
                 <Box textAlign="left"  fontSize="h5.fontSize">
-                    Welcome Jhon Doe,
+                    Bienvenido Jhon Doe,
                 </Box>
                 <Box fontSize="body2.fontSize" >
                     Selecciona las categorias que prefieras
                 </Box>
             </Typography>
-            <Box mt={3} >
+            <Box mt={3}  >
                 {
-                    category.map((item, index) => (
+                    JSONData.categories.map((item, index) => (
                         <Box key={index} my={2} position="relative" >
-                            <Card>
-                                <CardActionArea onClick={ () => (handleSelect(index)) } >
+                            <Card className="category-container-card-ctn" >
+                                <CardActionArea className="category-container-card" onClick={ () => (handleSelect(index)) } >
+                                    
                                     <Typography variant="overline">
-                                        <Box px={2} py={3} textAlign="left" >{item.description}</Box>
+                                        <Box px={2} py={3} textAlign="left" className="category-container-text" > <CardTravelIcon /> {item.description}</Box>
                                     </Typography>
                                     <input className="category-container-input" id={item.description} name={item.description} type="checkbox" />
-                                    <label className="category-container-label" for={item.description} >
-                                        <CheckCircleIcon /></label>
+                                    <label className="category-container-label" htmlFor={item.description} >
+                                        <ChevronRightIcon /></label>
                                 </CardActionArea>
                             </Card>
                         </Box>
@@ -82,7 +93,7 @@ const CategoryPage = () => {
                 }
             </Box>
             <Box  display="flex" justifyContent="center" mt={5}  >
-                <Button  variant="contained" color="primary">
+                <Button size="large"  variant="contained" color="primary">
                     <Link  to="/preferences" >Continuar</Link>
                 </Button>
             </Box>

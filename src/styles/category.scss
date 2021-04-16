@@ -4,12 +4,10 @@
         top: 50%;
         transform: translateY(-50%);
         right: 30px;
-        opacity: 0;
-        visibility: hidden;
         display: flex;
         align-items: center;
-        color: #4caf50;
         pointer-events: none;
+        color: #fff !important;
     }
     &-input {
         position: absolute;
@@ -25,5 +23,25 @@
             opacity: 1;
             visibility: visible;
         }
+    }
+    &-card-ctn {
+        border-radius: 15px !important;
+    }
+    &-card {
+        background: #004193 !important;
+        display: flex;
+    }
+    &-text {
+        color: #fff !important;
+        display: flex;
+        align-items: center;
+        svg {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    }
+    a {
+        color: #fff !important;
+        text-decoration: none !important;
     }
 }
